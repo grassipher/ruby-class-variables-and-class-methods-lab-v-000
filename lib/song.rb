@@ -1,7 +1,7 @@
 class Song
   @@count = 0
-  @@song_artists = {}
-  @@song_genres = {}
+  @@artists = {}
+  @@genres = {}
   
   attr_accessor :name, :artist, :genre
   
@@ -9,11 +9,11 @@ class Song
     @@count += 1
     @name = song_name
     @artist = song_artist
-    @@song_artists[song_artist] = 0 if !@@song_artists.include?(song_artist)
-    @@song_artists[song_artist] += 1
+    @@artists[song_artist] = 0 if !@@artists.include?(song_artist)
+    @@artists[song_artist] += 1
     @genre = song_genre
-    @@song_genres[song_genre] = 0 if !@@song_genres.include?(song_genre)
-    @@song_genres[song_genre] += 1
+    @@genres[song_genre] = 0 if !@@genres.include?(song_genre)
+    @@genres[song_genre] += 1
   end
   
   def self.count
@@ -21,18 +21,18 @@ class Song
   end
   
   def self.artists
-    @@song_artists.keys
+    @@artists.keys
   end
   
   def self.genres
-    @@song_genres.keys
+    @@genres.keys
   end
   
   def self.genre_count
-    @@song_genres
+    @@genres
   end
   
   def self.artist_count
-    @@song_artists
+    @@artists
   end
 end
