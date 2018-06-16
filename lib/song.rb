@@ -9,10 +9,10 @@ class Song
     @@count += 1
     @name = song_name
     @artist = song_artist
-    @@artists << song_artist if !@@artists.include?(song_artist)
+    @@artists << song_artist
     #@@artists[song_artist] += 1
     @genre = song_genre
-    @@genres << song_genre if !@@genres.include?(song_genre)
+    @@genres << song_genre
     #@@genres[song_genre] += 1
   end
   
