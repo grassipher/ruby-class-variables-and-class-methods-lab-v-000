@@ -21,7 +21,10 @@ class Song
   end
   
   def self.artists
-    @@artists
+    new_artist_array = []
+    @@artists.each do |artist|
+      
+    end
   end
   
   def self.genres
