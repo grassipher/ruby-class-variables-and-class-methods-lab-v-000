@@ -7,7 +7,10 @@ class Song
   
   def initialize(song_name, song_artist, song_genre)
     @@song_count += 1
-    
+    @name = song_name
+    @artist = song_artist
+    @@song_artists[song_artist] = 0 if !@@song_artists.include?(song_artist)
+    @@song_artists[song_artist] << 
     
   end
 end
