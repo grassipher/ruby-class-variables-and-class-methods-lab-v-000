@@ -18,4 +18,8 @@ class Song
   def self.count
     @@song_count
   end
+  
+  def self.artists
+    @@song_artists.keys
+  end
 end
