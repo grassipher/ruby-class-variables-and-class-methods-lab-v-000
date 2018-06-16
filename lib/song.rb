@@ -40,7 +40,7 @@ class Song
     new_genre_hash = {}
     @@genres.each do |genre|
       new_genre_hash[genre] = 0 if !new_genre_hash.keys.include?(genre)
-      new_genre_hash[genre] =+ 1
+      new_genre_hash[genre] += 1
      end
      return new_genre_hash
   end
