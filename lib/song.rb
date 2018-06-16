@@ -27,11 +27,11 @@ class Song
     @@song_genres.keys
   end
   
-  def genre_count
+  def self.genre_count
     @@song_genres
   end
   
-  def artist_count
+  def self.artist_count
     @@song_artists
   end
 end
