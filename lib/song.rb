@@ -14,4 +14,8 @@ class Song
     @@song_genres[song_genre] = 0 if !@@song_genres.include?(song_genre)
     @@song_genres[song_genre] += 1
   end
+  
+  def self.count
+    @@song_count
+  end
 end
