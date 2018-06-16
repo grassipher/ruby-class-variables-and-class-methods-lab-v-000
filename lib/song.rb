@@ -26,4 +26,8 @@ class Song
   def self.genres
     @@song_genres.keys
   end
+  
+  def genre_count
+    @@song_genres
+  end
 end
