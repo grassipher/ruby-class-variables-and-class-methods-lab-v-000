@@ -10,7 +10,7 @@ class Song
     @name = song_name
     @artist = song_artist
     @@song_artists[song_artist] = 0 if !@@song_artists.include?(song_artist)
-    @@song_artists[song_artist] << 
+    @@song_artists[song_artist] += 1 
     
   end
 end
