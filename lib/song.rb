@@ -22,4 +22,8 @@ class Song
   def self.artists
     @@song_artists.keys
   end
+  
+  def self.genres
+    @@song_genres.keys
+  end
 end
