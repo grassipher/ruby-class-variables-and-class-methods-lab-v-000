@@ -11,6 +11,7 @@ class Song
     @artist = song_artist
     @@song_artists[song_artist] = 0 if !@@song_artists.include?(song_artist)
     @@song_artists[song_artist] += 1
-    
+    @@song_genres[song_genre] = 0 if !@@song_genres.include?(song_genre)
+    @@song_genres[song_genre] += 1
   end
 end
