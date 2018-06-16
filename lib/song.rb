@@ -23,8 +23,9 @@ class Song
   def self.artists
     new_artist_array = []
     @@artists.each do |artist|
-      
+      new_artist_array << artist if !new_artist_array.include?(artist)
     end
+    return new_artist_array
   end
   
   def self.genres
